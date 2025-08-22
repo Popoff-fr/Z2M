@@ -1,0 +1,318 @@
+homeassistant:
+  enabled: true
+  discovery_topic: homeassistant
+mqtt:
+  server: mqtt://core-mosquitto:1883
+  user: mqtt
+  password: mqtt
+  base_topic: zigbee2mqtt
+serial:
+  port: /dev/ttyACM0
+  adapter: deconz
+frontend:
+  enabled: true
+  port: 8099
+  package: zigbee2mqtt-windfront
+devices:
+  '0xa4c1389aacde9404':
+    friendly_name: Prise Salon
+    current_calibration: 0
+    power_calibration: 0
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    voltage_calibration: 0
+    energy_calibration: 0
+    energy_precision: 3
+    homeassistant: {}
+    optimistic: true
+  '0xa4c1388e5827cd83':
+    friendly_name: Machine à Laver
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+    power_calibration: 0
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+    homeassistant: {}
+    optimistic: true
+  '0x0015bc0031017f3f':
+    friendly_name: Détecteur Fumée
+    homeassistant: {}
+    optimistic: true
+  '0x0015bc0034001ad0':
+    friendly_name: Détecteur Feu
+    homeassistant: {}
+    optimistic: true
+  '0xa4c138ec208ecd73':
+    friendly_name: Prise Caméra Bureau Charlotte
+    power_calibration: 0
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+    energy_precision: 3
+    homeassistant: {}
+    optimistic: true
+  '0xa4c138f85c72ac01':
+    friendly_name: Volet Salon
+    homeassistant: {}
+    optimistic: true
+  '0xa4c1388e861d172c':
+    friendly_name: Volet Chambre
+    homeassistant: {}
+    optimistic: true
+    invert_cover: false
+    cover_position_tilt_disable_report: false
+  '0xa4c138f29abd6ba2':
+    friendly_name: Volet Cuisine
+    homeassistant: {}
+    optimistic: true
+  '0xa4c1388b3b08a2ab':
+    friendly_name: Volet TV
+    homeassistant: {}
+    optimistic: true
+  '0xc49886000006748d':
+    friendly_name: Lampe Bureau Damien
+    homeassistant: {}
+    optimistic: true
+  '0x003c84fffed74fb1':
+    friendly_name: Lampe Salon
+    homeassistant: {}
+    optimistic: true
+  '0xc498860000ca28a6':
+    friendly_name: Lampe Salle à Manger
+    homeassistant: {}
+    optimistic: true
+  '0x001788010dafd74e':
+    friendly_name: Lampe Terrasse 1
+    homeassistant: {}
+    optimistic: true
+  '0x001788010dacfe39':
+    friendly_name: Lampe Terrasse 2
+    homeassistant: {}
+    optimistic: true
+  '0x048727fffe7b52cc':
+    friendly_name: Spots Terrasse
+    state_action: false
+    homeassistant: {}
+    optimistic: true
+  '0xc498860000c9ebeb':
+    friendly_name: Lampe Entrée
+    homeassistant: {}
+    optimistic: true
+  '0x00158d0005d29199':
+    friendly_name: Linky
+    kWh_precision: 3
+    measurement_poll_interval: ''
+    production: 'true'
+    linky_mode: standard
+    tic_command_whitelist: all
+    measurement_poll_chunk: ''
+    homeassistant: {}
+    optimistic: true
+  '0x048727fffefc941c':
+    friendly_name: Projecteurs Terrasse
+    state_action: false
+    homeassistant: {}
+    optimistic: true
+  '0x3c6a2cfffed41eb0':
+    friendly_name: Capteur Conso Tableau
+    current_precision: 3
+    power_precision: 3
+    power_calibration: 0
+    energy_precision: 3
+    current_calibration: 0
+    energy_calibration: 0
+    homeassistant: {}
+    optimistic: true
+  '0xa4c138c6b8d4502a':
+    friendly_name: Pompe Piscine
+    power_calibration: 0
+    current_calibration: 0
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    voltage_calibration: 0
+    energy_calibration: 0
+    homeassistant: {}
+    optimistic: true
+  '0x001788010d438293':
+    friendly_name: Lampe Entrée Cour
+    homeassistant: {}
+    optimistic: true
+  '0x001788010d439fac':
+    friendly_name: Lampe Étendage
+    homeassistant: {}
+    optimistic: true
+  '0x00158d00093ea3ef':
+    friendly_name: Capteur Temp Cour
+    homeassistant: {}
+    optimistic: true
+  '0xa4c138507a1798d8':
+    friendly_name: Ouverture Portail
+    homeassistant: {}
+    optimistic: true
+  '0xa4c138ce490a3ae7':
+    friendly_name: Volet Bureau Damien
+    invert_cover: false
+    cover_position_tilt_disable_report: true
+    homeassistant: {}
+    optimistic: true
+  '0xa4c1385327d73af0':
+    friendly_name: Volet Bureau Charlotte
+    homeassistant: {}
+    optimistic: true
+  '0xa4c138f261ca5475':
+    friendly_name: Volet Salle de Bain
+    homeassistant: {}
+    optimistic: true
+  '0xa4c13812511fa0a3':
+    friendly_name: Porte Garage
+    homeassistant: {}
+    optimistic: true
+  '0x00124b002fceffe1':
+    friendly_name: Détecteur MVT Etendage
+    homeassistant: {}
+    optimistic: true
+  '0x001788010de98cda':
+    friendly_name: Lampe Terrasse 3
+    homeassistant: {}
+    optimistic: true
+  '0x001788010de8b325':
+    friendly_name: Lampe Récupérateur Eau
+    homeassistant: {}
+    optimistic: true
+  '0x00124b002fb3343d':
+    friendly_name: Détecteur MVT Récupérateur Eau
+    homeassistant: {}
+    optimistic: true
+  '0xa4c1381a967929d7':
+    friendly_name: Cave à Vin
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+    homeassistant: {}
+    optimistic: true
+    power_calibration: 0
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+  '0xa4c138c8c3ecaf7f':
+    friendly_name: Baie Informatique
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+    homeassistant: {}
+    optimistic: true
+    power_calibration: 0
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+  '0xa4c1380e7fbece42':
+    friendly_name: Frigo Cuisine
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+    homeassistant: {}
+    optimistic: true
+    power_calibration: 0
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+  '0xa4c1388cd24d62f4':
+    friendly_name: Frigo Buanderie
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+    homeassistant: {}
+    optimistic: true
+    power_calibration: 0
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+  '0xa4c1384286b1967a':
+    friendly_name: PC Damien
+    power_precision: 3
+    power_calibration: 0
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+  '0x00124b002e5efe09':
+    friendly_name: Détecteur MVT Cour
+  '0x44e2f8fffe0f6058':
+    friendly_name: Capteur Température Buanderie
+  '0x44e2f8fffe60ae9d':
+    friendly_name: Capteur Température Cabanon
+  '0x286847fffe8b9a5d':
+    friendly_name: Détecteur Présence Salon
+  '0xa4c13833f2c0f6ba':
+    friendly_name: Bambulab P1S
+    power_calibration: 0
+    power_precision: 3
+    current_calibration: 0
+    current_precision: 3
+    voltage_calibration: 0
+    voltage_precision: 3
+    energy_calibration: 0
+    energy_precision: 3
+  '0xa4c138c268755b65':
+    friendly_name: Prise Robot Tondeuse
+    power_calibration: 0
+    power_precision: 3
+    current_calibration: 0
+    current_precision: 3
+    voltage_calibration: 0
+    voltage_precision: 3
+    energy_calibration: 0
+    energy_precision: 3
+  '0xa4c138766cea8e61':
+    friendly_name: Prise Tablette Salon
+    power_calibration: 0
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+    current_calibration: 0
+    voltage_calibration: 0
+    energy_calibration: 0
+  '0x3c6a2cfffed53ed5':
+    friendly_name: Température Piscine
+    temperature_precision: 1
+  '0x001788010d053bb4':
+    friendly_name: Lampe Salon 1
+  '0x001788010cd421fa':
+    friendly_name: Lampe Salon 2
+  '0x001788010cd40740':
+    friendly_name: Lampe Salon 3
+  '0x001788010cd42165':
+    friendly_name: Lampe Cabanon
+  '0xa4c138777fd7653c':
+    friendly_name: Bambulab AMS
+    power_precision: 3
+    current_precision: 3
+    voltage_precision: 3
+    energy_precision: 3
+advanced:
+  log_level: error
+  last_seen: ISO_8601
+device_options: {}
+availability:
+  enabled: true
+  active:
+    timeout: 20
+  passive:
+    timeout: 720
+groups: {}
+version: 4
